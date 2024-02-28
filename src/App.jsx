@@ -1,5 +1,5 @@
 
-// import Congrajulation from "./Congratulation.jsx";
+// import Congratulation from "./Congratulation.jsx";
 import Gallery from "./Gallery";
 
 import Profile from "./Profile";
