@@ -1,5 +1,5 @@
 
-import Congrajulation from "./Congratulation.jsx";
+import Congratulation from "./Congratulation.jsx";
 import Gallery from "./Gallery";
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
       <div>
       
         <Gallery/>
-        <Congrajulation/>
+        <Congratulation/>
 
       </div>
       
