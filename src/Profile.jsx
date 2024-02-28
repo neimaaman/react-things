@@ -7,20 +7,20 @@
     );
   }
 
- function Profile1() {
+//  function Profile1() {
    
-    return  <img src="https://i.imgur.com/jA8hHMpm.jpg" alt="Katsuko Saruhashi" />;
-  }
+//     return  <img src="https://i.imgur.com/jA8hHMpm.jpg" alt="Katsuko Saruhashi" />;
+//   }
 
 
-  function Profile2() {
-    return (
-      <img
-        src="https://i.imgur.com/QIrZWGIs.jpg"
-        alt="Alan L. Hart"
-      />
-    );
-  }
+//   function Profile2() {
+//     return (
+//       <img
+//         src="https://i.imgur.com/QIrZWGIs.jpg"
+//         alt="Alan L. Hart"
+//       />
+//     );
+//   }
   
 
   
