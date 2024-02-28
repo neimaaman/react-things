@@ -1,8 +1,9 @@
 
 // import Congratulation from "./Congratulation.jsx";
-import Gallery from "./Gallery";
+import Bio from "./Bio";
+// import Gallery from "./Gallery";
 
-import Profile from "./Profile";
+// import Profile from "./Profile";
 
 function App() {
   
@@ -10,9 +11,10 @@ function App() {
     <>
       <div>
       
-        <Gallery/>
+        {/* <Gallery/> */}
         {/* <Congrajulation/> */}
-        <Profile/>
+        {/* <Profile/> */}
+        <Bio/>
       </div>
       
        
