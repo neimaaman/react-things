@@ -1,4 +1,4 @@
-import { GetImageUrl } from './Utils.jsx';
+// import { GetImageUrl } from './Utils.jsx';
 
 
 function ProfileTwo ({name,profession,awards,discovered,imageId}) {

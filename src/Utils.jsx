@@ -1,6 +1,6 @@
-export function GetImageUrl(imageId, size = 's') {
+export function GetImageUrl(imageId, size ) {
     const imageUrl = 
-      'https://i.imgur.com/' +
+      'https://i.imgur.com/7vQD0fP' +
       imageId +
       size +
       '.jpg'

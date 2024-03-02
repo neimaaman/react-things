@@ -1,10 +1,18 @@
-import { getImageUrl } from './Utils.js';
+ function getImageUrl(person, size) {
+    return (
+      'https://i.imgur.com/' +
+      person.imageId +
+      size +
+      '.jpg'
+    );
+  }
+  
 
 function Avatar({ person, size }) {
   return (
     <img
       className="avatar"
-      src={getImageUrl(person, 'b')}
+      src={getImageUrl(person, 's')}
       alt={person.name}
       width={size}
       height={size}

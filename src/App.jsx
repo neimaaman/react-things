@@ -3,7 +3,9 @@
 // import Gallery from "./Gallery";
 // import Profile from "./Profile";
 // import TodoList from "./ToDoList.jsx";
-  import GalleryTwo from "./GalleryTwo";
+  // import Profile from "./Avatar";
+import Profile4 from "./Card";
+// import GalleryTwo from "./GalleryTwo";
 function App() {
   
   return (
@@ -16,7 +18,9 @@ function App() {
         {/* <Profile/> */}
         {/* <Bio/> */}
         {/* <TodoList/> */}
-        <GalleryTwo/>
+        {/* <GalleryTwo/> */}
+        {/* <Profile/> */}
+        <Profile4/>
       </div>
       
        
