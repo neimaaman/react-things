@@ -4,7 +4,10 @@
 // import Profile from "./Profile";
 // import TodoList from "./ToDoList.jsx";
   // import Profile from "./Avatar";
-import Profile4 from "./Card";
+// import Profile4 from "./Card";
+import DrinkList from "./DrinkList";
+import PackingList2 from "./PacketList2";
+import PackingList from "./PackingList";
 // import GalleryTwo from "./GalleryTwo";
 function App() {
   
@@ -20,7 +23,10 @@ function App() {
         {/* <TodoList/> */}
         {/* <GalleryTwo/> */}
         {/* <Profile/> */}
-        <Profile4/>
+        {/* <Profile4/> */}
+        <PackingList/>
+        <PackingList2/>
+        <DrinkList/>
       </div>
       
        
