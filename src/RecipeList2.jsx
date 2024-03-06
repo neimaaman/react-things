@@ -16,22 +16,37 @@ function Recipe({ id, name, ingredients }) {
     return (
       <div>
         <h2>{name}</h2>
-        <ul>
-          {ingredients.map((ingredient, index) => (
-            <li key={index}>{ingredient}</li>
-          ))}
-        </ul>
+       <ul>
+        <li>
+         {id}
+         {ingredients}
+        </li>
+       </ul>
       </div>
     );
   }
   
   export default function RecipeList2() {
-    return (
-      <div>
-        <h1>Recipes</h1>
-        {recipes.map((recipe) => (
-          <Recipe key={recipe.id} {...recipe} />
+  
+      
+        
+    const recipee = recipes.map (recipeed => 
+      <li key={recipeed.id}>
+      
+        <b><h2>{recipeed.name}</h2></b>
+        
+        <ul>
+        {recipeed.ingredients.map((ingredient) => (
+          <li >{ingredient}</li>
         ))}
-      </div>
+      </ul> 
+         
+      
+      </li>)
+        
+        return (  
+       <div> 
+            {recipee}
+        </div>
     );
   }

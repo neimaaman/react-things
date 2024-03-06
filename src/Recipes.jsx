@@ -20,8 +20,8 @@
         <b><h2>{recipeed.name}</h2></b>
         
         <ul>
-        {recipeed.ingredients.map((ingredient, index) => (
-          <li key={index}>{ingredient}</li>
+        {recipeed.ingredients.map((ingredient) => (
+          <li >{ingredient}</li>
         ))}
       </ul> 
          

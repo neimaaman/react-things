@@ -32,6 +32,7 @@ export default function GalleryTwo() {
   return (
     <div>
       <h1>Notable Scientists</h1>
+      
       <ProfileTwo
         
         name="Maria Skłodowska-Curie" 
