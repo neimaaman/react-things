@@ -15,6 +15,9 @@ import Poem from "./Poem";
 import Clock from "./Clock";
 import Profile from "./BrokenProfile";
 import Person from "./BrokenProfile";
+import Story from "./Story";
+
+
 
 // import GalleryTwo from "./GalleryTwo";
 function App() {
@@ -41,6 +44,7 @@ function App() {
         <Poem />
         <Clock time={currentTime}/>
         <Person/>
+        <Story/>
       </div>
       
        
