@@ -1,20 +1,24 @@
 export default function Clock({ time }) {
+    const hours = time.getHours();
     
-  let hours = time.getHours();
-  let className;
-  if (hours >= 0 && hours <= 6) {
-    className = 'night';
-  } else {
-    className = 'day';
-  }
-  return (
-    <>
-    <h1 className={className}>
-      {time.toLocaleTimeString()}
-    </h1>
-    </>
-    
-  );
-}
+    const showTime = hours >= 0 && hours <= 6;
 
+  const nightTime ={
+    backgroundColor: 'black',
+    color: 'white'
+  };
+
+  const dayTime = {
+    backgroundColor: 'white',
+    color: 'black'
+  }
+
+  const currentTime = new Date();
+    return (
+
+      <h1 id="time" style={showTime ? nightTime : dayTime}>
+        {time.toLocaleTimeString()}
+      </h1>
+    );
+  }
   

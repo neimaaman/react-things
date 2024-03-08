@@ -10,12 +10,15 @@ const poem = {
 
 export default function Poem() {
   return (
-    <article>
+    <article >
       {poem.lines.map((line, idx, arr) =>
         idx !== arr.length - 1 ? (
+          <div key={idx}>
           <p>
-            {line}  <hr />
+            {line}  
           </p>
+          <hr />
+          </div>
         ) : (
           <p>{line} </p>
         )

@@ -11,12 +11,14 @@ import PackingList2 from "./PacketList2";
 import PackingList from "./PackingList";
 import RecipeList from "./Recipes";
 import RecipeList2 from "./RecipeList2";
-// import Poem from "./Poem";
+import Poem from "./Poem";
 import Clock from "./Clock";
+import Profile from "./BrokenProfile";
+import Person from "./BrokenProfile";
 
 // import GalleryTwo from "./GalleryTwo";
 function App() {
-  
+  const currentTime = new Date()
   return (
     <>
       <div>
@@ -36,8 +38,9 @@ function App() {
         <List/>
         <RecipeList/>
         <RecipeList2/>
-        {/* <Poem /> */}
-        <Clock />
+        <Poem />
+        <Clock time={currentTime}/>
+        <Person/>
       </div>
       
        
