@@ -65,7 +65,7 @@ function App() {
         <Person/>
         <Story/>
         <LightSwitch/>
-        <ColorSwitch.apply/>
+        <ColorSwitch/>
       </div>
       
        
