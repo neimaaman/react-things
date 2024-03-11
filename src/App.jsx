@@ -22,9 +22,26 @@ import Story from "./Story";
 // import GalleryTwo from "./GalleryTwo";
 function App() {
   const currentTime = new Date()
+  let [stories, setStories] = useState([...initialStories]);
+  let time = useTime();
+
+  if (stories.lenght > 100) {
+    stories.lenght = 100;
+  }
   return (
     <>
       <div>
+      style={{
+                width: "100%",
+                height: "100%",
+                textAlign: "center"
+            }}
+        
+            <h2>It is {time.toLocaleTimeString()} now.</h2>
+            <StoryTray stories={stories} setStories={() => console.log("hello")} />
+            <StoryTray stories={stories} setStories= {setStories}/>
+            {/*<StoryTray stories={stories} setStories={()=> {}}/>*/}
+        
       
 
         {/* <Gallery/> */}

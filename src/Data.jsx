@@ -29,4 +29,11 @@ export const people = [{
     accomplishment: 'white dwarf star mass calculations',
     imageId: 'lrWQx8l'
   }];
+
+
+  export const stories = [
+    {id: 0, label: "Ankit's Story" },
+    {id: 1, label: "Taylor's Story" },
+  ];
+ 
   
