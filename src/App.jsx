@@ -16,6 +16,8 @@ import Clock from "./Clock";
 import Profile from "./BrokenProfile";
 import Person from "./BrokenProfile";
 import Story from "./Story";
+import LightSwitch from "./LightSwitch";
+import ColorSwitch from "./colorSwitch";
 
 
 
@@ -62,6 +64,8 @@ function App() {
         <Clock time={currentTime}/>
         <Person/>
         <Story/>
+        <LightSwitch/>
+        <ColorSwitch.apply/>
       </div>
       
        
