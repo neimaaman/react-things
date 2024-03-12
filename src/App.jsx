@@ -18,6 +18,8 @@ import Person from "./BrokenProfile";
 import Story from "./Story";
 import LightSwitch from "./LightSwitch";
 import ColorSwitch from "./colorSwitch";
+import Gallery from "./GalleryThree";
+import Form from "./Form";
 
 
 
@@ -66,6 +68,8 @@ function App() {
         <Story/>
         <LightSwitch/>
         <ColorSwitch/>
+        <Gallery/>
+        <Form/>
       </div>
       
        
