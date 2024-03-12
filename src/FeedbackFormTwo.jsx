@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-export default function FeedbackForm() {
+export default function FeedbackFormTwo() {
   const [name, setName] = useState('');
 
   function handleClick() {

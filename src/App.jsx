@@ -20,6 +20,7 @@ import LightSwitch from "./LightSwitch";
 import ColorSwitch from "./colorSwitch";
 import Gallery from "./GalleryThree";
 import Form from "./Form";
+import FeedbackFormTwo from "./FeedbackFormTwo";
 
 
 
@@ -70,6 +71,7 @@ function App() {
         <ColorSwitch/>
         <Gallery/>
         <Form/>
+        <FeedbackFormTwo/>
       </div>
       
        
