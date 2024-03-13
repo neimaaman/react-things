@@ -7,16 +7,16 @@ import {useState} from 'react';
 
   function handleFirstNameChange(e) {
     
-    setFirstName = e.target.value;
+    setFirstName (e.target.value);
   }
 
   function handleLastNameChange(e) {
-    setLastName = e.target.value;
+    setLastName (e.target.value) ;
   }
 
   function handleReset() {
-    setFirstName = '';
-    setLastName = '';
+    setFirstName ('');
+    setLastName  ('');
   }
 
   return (
