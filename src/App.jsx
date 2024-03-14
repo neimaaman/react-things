@@ -5,15 +5,43 @@
 // import TodoList from "./ToDoList.jsx";
   // import Profile from "./Avatar";
 // import Profile4 from "./Card";
+import List from "./Lists";
 import DrinkList from "./DrinkList";
 import PackingList2 from "./PacketList2";
 import PackingList from "./PackingList";
+import RecipeList from "./Recipes";
+import RecipeList2 from "./RecipeList2";
+import Poem from "./Poem";
+import Clock from "./Clock";
+import Profile from "./BrokenProfile";
+import Person from "./BrokenProfile";
+import Story from "./Story";
+
+
+
 // import GalleryTwo from "./GalleryTwo";
 function App() {
-  
+  const currentTime = new Date()
+  let [stories, setStories] = useState([...initialStories]);
+  let time = useTime();
+
+  if (stories.lenght > 100) {
+    stories.lenght = 100;
+  }
   return (
     <>
       <div>
+      style={{
+                width: "100%",
+                height: "100%",
+                textAlign: "center"
+            }}
+        
+            <h2>It is {time.toLocaleTimeString()} now.</h2>
+            <StoryTray stories={stories} setStories={() => console.log("hello")} />
+            <StoryTray stories={stories} setStories= {setStories}/>
+            {/*<StoryTray stories={stories} setStories={()=> {}}/>*/}
+        
       
 
         {/* <Gallery/> */}
@@ -27,6 +55,13 @@ function App() {
         <PackingList/>
         <PackingList2/>
         <DrinkList/>
+        <List/>
+        <RecipeList/>
+        <RecipeList2/>
+        <Poem />
+        <Clock time={currentTime}/>
+        <Person/>
+        <Story/>
       </div>
       
        
