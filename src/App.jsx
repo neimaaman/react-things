@@ -18,6 +18,9 @@ import Person from "./BrokenProfile";
 import Story from "./Story";
 import LightSwitch from "./LightSwitch";
 import ColorSwitch from "./colorSwitch";
+import Gallery from "./GalleryThree";
+import Form from "./Form";
+import FeedbackFormTwo from "./FeedbackFormTwo";
 
 
 
@@ -66,6 +69,9 @@ function App() {
         <Story/>
         <LightSwitch/>
         <ColorSwitch/>
+        <Gallery/>
+        <Form/>
+        <FeedbackFormTwo/>
       </div>
       
        
