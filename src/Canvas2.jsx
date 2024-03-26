@@ -8,7 +8,7 @@ const initialPosition = {
     y: 0
 };
 
-export default function Canvas() {
+export default function Canvas2() {
     const [shape, setShape] = useImmer({
         color: 'orange',
         position: initialPosition
