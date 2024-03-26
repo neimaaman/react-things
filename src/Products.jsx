@@ -15,34 +15,38 @@ const initialProducts = [{
 }];
 
 export default function ShoppingCart() {
-    const [
-        products,
-        setProducts
-    ] = useState(initialProducts)
+    const [products, setProducts] = useState(initialProducts);
 
-    function handleIncreaseClick(productId) {
-        setProducts(products.map(product => {
-            if (product.id === productId) {
+    function handleIncrementClick(index) {
+        const nextProducts = products.map((p, i) => {
+            if (i === index) {
+                // Increment the clicked counter
                 return {
-                    ...product,
-                    count: product.count + 1
+                    ...p,
+                    count: p.count + 1
                 };
             } else {
-                return product;
+                // The rest haven't changed
+                return p;
             }
-        }))
+        });
+        setProducts(nextProducts);
     }
 
-    function handleDecreaseClick(productId) {
-        setProducts(products.map(product => {
-                if (product.id === productId) {
-                    return {
-                        ...product,
-                        count: product.count - 1
-                    };
-                } else {
-                    return product;
-                }
-            }
-        ))
-    }}
+    return (
+        <ul>
+            {products.map(product => (
+                <li key={product.id}>
+                    {product.name}
+                    {' '}
+                    (<b>{product.count}</b>)
+                    <button onClick={() => {
+                        handleIncrementClick(product.id);
+                    }}>
+                        +
+                    </button>
+                </li>
+            ))}
+        </ul>
+    );
+}
